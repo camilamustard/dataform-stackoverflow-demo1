@@ -1,0 +1,7 @@
+config {
+  type: "declaration",
+  database: dataform.projectConfig.vars.project_layer_raw,
+  schema: dataform.projectConfig.vars.dataset_layer_raw,
+  name: "badges",
+  description: "raw badges table"
+}
