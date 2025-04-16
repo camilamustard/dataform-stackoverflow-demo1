@@ -1,0 +1,14 @@
+defaultProject: camilavilaca-pso-upskilling
+defaultLocation: US
+defaultDataset: dataform
+defaultAssertionDataset: dataform_assertions
+dataformCoreVersion: 3.0.0
+vars: {
+    "env":"dev",
+    "project_layer_raw" : "bigquery-public-data",
+    "dataset_layer_raw" : "stackoverflow",
+    "project_layer_staging" : "camilavilaca-pso-upskilling",
+    "dataset_layer_staging" : "staging",
+    "project_layer_reporting" : "camilavilaca-pso-upskilling",
+    "dataset_layer_reporting" : "reporting",
+}

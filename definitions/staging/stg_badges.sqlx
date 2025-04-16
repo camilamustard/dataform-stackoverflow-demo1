@@ -1,0 +1,15 @@
+config {
+  type: "view",
+  tags: ["staging"],
+  database: dataform.projectConfig.vars.project_layer_staging,
+  schema: dataform.projectConfig.vars.dataset_layer_staging,
+  description: "Cleaned version of stackoverflow.badges"
+}
+
+select
+  id as badge_id,
+  name as badge_name,
+  date as award_timestamp,
+  user_id
+from
+  ${ref("badges")}
