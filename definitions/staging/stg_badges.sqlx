@@ -8,7 +8,7 @@ config {
 
 select
   id as badge_id,
-  name as badge_name,
+  name as badge_name~ççç---
   date as award_timestamp,
   user_id
 from
