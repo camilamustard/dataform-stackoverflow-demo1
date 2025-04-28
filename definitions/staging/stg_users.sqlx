@@ -6,17 +6,17 @@ config {
   description: "Cleaned version of stackoverflow.users table"
 }
 
-/* comentario codigo correto select
+comentario codigo correto select
 select
   id as user_id,
   age,
   creation_date,
   round(timestamp_diff(current_timestamp(), creation_date, day)/365) as user_tenure
 from
-  ${ref("users")}*/ 
+  ${ref("users")}
 
 
-/*codigo errado- adiciona coluna que causará um erro de divisão por zero*/
+/*codigo errado- adiciona coluna que causará um erro de divisão por zero
 select
   id as user_id,
   age,
@@ -25,5 +25,5 @@ select
   1/0 as deliberate_error  -- << LINHA ADICIONADA PARA CAUSAR ERRO
 from
   ${ref("users")}
-
+*/
   
