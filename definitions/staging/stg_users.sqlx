@@ -10,7 +10,6 @@ select
   id as user_id,
   age,
   creation_date,
-  round(timestamp_diff(current_timestamp(), creation_date, day)/365) as user_tenure,
-  1/0 as deliberate_error  -- << LINHA ADICIONADA PARA CAUSAR ERRO
+  round(timestamp_diff(current_timestamp(), creation_date, day)/365) as user_tenure
 from
   ${ref("users")}
